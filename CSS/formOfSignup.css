@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height:100vh;
+    background-image: linear-gradient(75deg,rgba(0, 0, 255, 0.336),rgba(255, 68, 0, 0.336));
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blue{
+    width: 60%;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.596);
+    border-radius: 300px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 0px;
+}
+#blue1{
+    top: -150px;
+    left: -350px;
+    animation:blueslide 1.5s ;
+}
+#blue2{
+    top: 10px;
+    left: -400px;
+    animation:blueslide 2s;
+}
+#blue3{
+    top: 20px;
+    left: -600px;
+    animation:blueslide 2.5s;
+}
+@keyframes blueslide{
+    from{
+        transform: translate(-5000px,-5000px) rotate(45deg);
+    }
+    to{       
+        transform: translate(0px,0px) rotate(45deg);
+    }    
+}
+.orangered{
+    width: 60%;
+    height: 100px;
+    background-color: orangered;
+    border-radius: 300px;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+#orangered1{
+    right:-220px; 
+    bottom:-180px;
+    animation:orangeslide 1.5s; 
+}
+#orangered2{
+   right:-250px;   
+   bottom: 10px;
+   animation:orangeslide 1s; 
+}
+#orangered3{
+   right:-500px;  
+   bottom: 0px; 
+   animation:orangeslide 1.5s; 
+}
+@keyframes orangeslide{
+    from{
+        transform: translate(5000px,5000px) rotate(45deg);
+    }   
+    to{
+        transform: translate(0px,0px) rotate(45deg); 
+    } 
+}
+#container{
+    width: 60%;
+    height: 80%;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.3),rgba(255, 68, 0, 0.3));
+    position:absolute;   
+    z-index:2;  
+    display: flex;
+    justify-content: space-between;
+    align-content: center;    
+    border-radius: 10px; 
+}
+#signupform{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.63); 
+    overflow: hidden;   
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    border-radius: 10px; 
+        
+}
+#sideinfo{
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.367),rgba(255, 68, 0, 0.367));
+    overflow: hidden;
+    border-radius: 10px; 
+}
+#heading{
+    width: 100%;
+    height: 20px;
+    padding-top: 20px;
+    letter-spacing: 2px;
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+    justify-content: center;
+    align-items: center;    
+}
+#registration{
+       color: rgb(56, 34, 34);
+        font-family: 'Roboto', sans-serif;
+    
+    }
+#info{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cname{
+    width: 45%;
+    height: 30px;
+    font-size: 20px;
+    outline: none;
+    border-radius: 10px;
+    text-indent: 15px;    
+}
+#continfo{
+    width:100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+.inform{
+    width: 94%;
+    height: 25px;
+    font-size: 20px;
+    outline: none;
+    border-radius: 20px;
+    text-indent: 15px;    
+}
+#datetext{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ #text{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#dob{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+.date{
+    width: 25%;
+    height: 25px;
+    font-size: 20px;
+    outline:none;
+}
+#gender{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.gbor{
+    width: 25%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-left: 30px;   
+    border: 2px solid rgba(0, 0, 0, 0.301);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.273);   
+}
+label{
+    padding-top: 0px;
+    padding-right:10px;
+   font-size: 20px;
+   font-weight: bold;
+}
+#term{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#checkbox{
+    width:40px;
+    height: 20px;
+    margin-left: 5px;
+    box-shadow: 0px 0px 0px black;
+}
+p{
+    font-size: 15px;
+    padding-left: 10px;
+}
+#submit{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#submbutt{
+    width: 50%;
+    height: 50%;
+   font-size: 20px;
+   font-weight: bold;
+   border-radius: 20px;
+   color: aliceblue;
+   background-color: royalblue;
+   outline: none;
+   transition: transform 0.5s;
+}
+#submbutt:hover{
+    transform: scale(1.2);
+}
+#account{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+#already{
+    font-size: 15px;
+    text-transform: none;
+    text-decoration: underline;
+    font-family: 'Roboto Slab', serif;
+
+}
+#Flipzon{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 40px;
+    top: 40px;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 4;
+    margin-left: 60px;
+    animation: textmove 10s infinite ease-in;
+}
+img{
+    width: 50%;
+    background-color: rgba(42, 24, 24, 0);
+    position: relative;
+    top: 100px;
+    z-index: 4;
+    margin-left: 70px;
+    animation: imgmove 5s infinite ease-in-out;    
+}
+@keyframes textmove {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+    
+}
+@keyframes imgmove {
+    0%{
+        transform: rotatey(0deg)scale(1.1);
+    }
+    25%{
+        transform:  rotatey(90deg)scale(1.1);
+    }
+    50%{
+        transform: rotatey(180deg) scale(1.1);
+    }
+    75%{
+        transform: rotatey(270deg)scale(1.1);
+    } 
+    100%{
+        transform: rotatey(360deg)scale(1.1);
+    }
+   
+
+}
